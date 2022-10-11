@@ -37,6 +37,19 @@ div#hobbies div{
 	margin-left: 38px;
 }
 
+div#rightSide h2{
+	text-shadow:5px 5px 3px #ac671dcf;
+	font-family: 'Koulen', cursive;
+	text-decoration-color: chocolate;
+	font-size:xx-large;
+}
+
+div#bottom h2{
+	text-shadow:5px 5px 3px #ac671dcf;
+	font-family: 'Koulen', cursive;
+	font-size:xx-large;
+}
+
 section#MBid h2{
 	font-family: 'Dosis', sans-serif;
 	text-align: center;
@@ -58,10 +71,20 @@ h4{
 	margin-bottom:0px;
 }
 
+div.eventF{
+	font-weight: bold;
+}
+
+div.eventPp{
+	font-weight: bold;
+}
+
+/*LEFT SIDE*/
 div#leftSide{
 	width:70%;
 }
 
+/*section MBid*/
 section#MBid div#me{
 	margin-left: 22px;
 	margin-bottom: 35px;
@@ -155,6 +178,7 @@ article#loisirs figcaption{
 	margin: 15px;
 }
 
+/*RIGTH SIDE*/
 div#rightSide{
 	width: 95%;
 }
@@ -233,7 +257,41 @@ article#parcoursPro div#timelinePp{
 	border-radius: 50%;
 }
 
+/*article competances*/
+div#bottom{
+	padding-left: 1.5em;
+}
 
+article#competences{
+	margin: auto;
+	/*width: 60%;*/
+	padding: 10px;
+}
+
+article#competences::before, article#competences::after{
+	/*position:absolute;*/
+	content: "";
+    display: table;
+}
+
+article#competences::after{
+    clear: both;
+}
+
+article#competences div.acquis{  /*permet de disposer les 2divs en colonne*/
+	width: 50%;
+    float: left;
+    position: relative;
+}
+
+article#competences div.acquisH{
+	width: 50%;
+    float: left;
+    position: relative;
+	padding-left: 1rem;
+}
+
+/*Responsive part*/
 @media screen and (max-width: 1347px) {
     *{
         box-sizing: content-box;
@@ -278,6 +336,24 @@ article#parcoursPro div#timelinePp{
     article#loisirs div#hobbies{
         padding-top : 50px;
     }
+
+    div#rightSide{
+        width: 85%;
+        margin: auto;
+    }
+    
+    div#bottom{
+    margin-left:2.7em;
+    }
+    
+    article#competences div.acquis{  /*permet de disposer les 2divs en colonne*/
+    width: 45%;
+    }
+    
+    article#competences div.acquisH{  /*permet de disposer les 2divs en colonne*/
+    width: 45%;
+    margin-left: 1.5em;
+    }
 }
 
 @media screen and (max-width : 811px){
@@ -303,6 +379,10 @@ article#parcoursPro div#timelinePp{
 	
 	section#MBid figure img#lIn{
 		width:30%;
+	}
+
+    article#competences div.acquis {
+		width: 80%;
 	}
 }
 
@@ -331,5 +411,15 @@ article#parcoursPro div#timelinePp{
 	
 	section#MBid figure img#lIn{
 		width:30%;
+	}
+
+    article#competences div.acquis {
+		width: 80%;
+	}
+
+	article#competences div.acquisH {
+		width: 100%;
+		margin-top:3em;
+		margin-left:-1em;
 	}
 }
