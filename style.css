@@ -1,0 +1,129 @@
+div#leftSide{
+	width:70%;
+}
+
+section#MBid div#me{
+	margin-left: 22px;
+	margin-bottom: 35px;
+	margin-right: 22px;
+}
+
+section#MBid figure img{
+	margin:5px;
+}
+
+section#MBid figure img#lIn{
+	width:20%;
+}
+
+section#MBid figure.iconeInfoMe img{
+	width:85%;
+	margin-left: 20px;
+}
+
+section#MBid figure.iconeInfo img{
+	width:10%;
+}
+
+section#MBid figure.iconeInfo a{
+	color:inherit;
+	text-decoration: none;
+	padding-right:3px;
+}
+
+section#MBid figure.iconeInfo a div{
+	width:8%;
+}
+
+section#MBid figure.iconeInfo a img{
+	width:8%;
+	margin-left:-18px;
+}
+
+section#MBid figure.iconeInfoLin a{
+	color:inherit;
+	text-decoration: none;
+	margin-left: 5em;
+}
+
+section#MBid figure{
+	display: flex;
+    align-items: center;
+}
+
+section#MBid figcaption{
+	width:80%;
+	margin-left:10px;
+}
+
+section#MBid figcaption#mail{
+	width:80%;
+	margin-left:-10px;
+}
+
+
+@media screen and (max-width: 1347px) {
+    div#leftSide{
+        width: 85%;
+        margin-top: 3em;
+        margin-left: 4.2em; 
+    }
+
+    div#leftSide section#MBid{
+        column-count:2;
+        break-inside:avoid;
+    }
+
+    section#MBid figure img#lIn {
+        width: 7%;
+    }
+
+    div#leftSide section#personalInfo{
+        column-count:2;
+        break-inside:avoid;
+    }
+}
+
+@media screen and (max-width : 811px){
+	
+	section#MBid  figure.iconeInfoMe img{
+		width:155%;
+		margin-left: 0px;
+		margin-right: 40px;
+	}
+
+    section#MBid  figure.iconeInfo img{
+		width:10%;
+	}
+
+    section#MBid figure.iconeInfo a img{
+		width:15%;
+	}
+	
+	section#MBid figure img#lIn{
+		width:30%;
+	}
+}
+
+@media screen and (max-width: 500px)  {
+	div#name{
+		margin-left:3em;
+	}
+	
+	section#MBid  figure.iconeInfoMe img{
+		width:155%;
+		margin-left: 0px;
+		margin-right: 40px;
+	}
+	section#MBid  figure.iconeInfo img{
+		width:10%;
+	}
+
+	section#MBid figure.iconeInfo a img{
+		width:15%;
+	}
+	
+	section#MBid figure img#lIn{
+		width:30%;
+	}
+}
