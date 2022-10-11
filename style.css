@@ -1,3 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: 'Mukta', sans-serif;
+}
+
+h1{
+    font-family: 'Koulen', cursive;
+    letter-spacing: 3px;
+    text-shadow:5px 5px 3px #ac671dcf;
+}
+
+div#name{
+    margin-left: 5em;
+}	
+
+section#personalInfo h2{
+    font-family: 'Koulen', cursive;
+}
+
+div#icones{
+    margin-left: 35px;
+}
+
+section#personalInfo{
+    text-align:center;
+}
+
+section#personalInfo div{
+	margin-bottom: 2em;
+}
+
+div#hobbies div{
+	margin-left: 38px;
+}
+
+section#MBid h2{
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+}
+
+h2{
+	margin-top:20px;
+	margin-bottom:6px;
+}
+
+h3{
+	font-size:xx-large;
+	margin:3px;
+}
+
+h4{
+	font-size:x-large;
+	margin-top:15px;
+	margin-bottom:0px;
+}
+
 div#leftSide{
 	width:70%;
 }
@@ -61,8 +121,54 @@ section#MBid figcaption#mail{
 	margin-left:-10px;
 }
 
+/*article langues*/
+article#langues{
+	margin :32px;
+}
+
+
+/*article qualites*/
+article#qualites{
+	margin :32px;
+}
+
+/*article loisirs*/
+article#loisirs{
+	margin:32px;
+}
+
+article#loisirs figure.icone{
+	margin-left:75px;
+	margin-bottom: 20px;
+}
+
+article#loisirs figure.icone img{
+	width:23%;
+}
+
+article#loisirs figure{
+	display: flex;
+    align-items: center;
+}
+
+article#loisirs figcaption{
+	margin: 15px;
+}
+
 
 @media screen and (max-width: 1347px) {
+    *{
+        box-sizing: content-box;
+    }
+    
+    body{
+    flex-direction: column;
+    }
+    
+    div#icones{
+    float:left; 
+    }    
+
     div#leftSide{
         width: 85%;
         margin-top: 3em;
@@ -74,6 +180,10 @@ section#MBid figcaption#mail{
         break-inside:avoid;
     }
 
+    section#MBid figure.iconeInfo img {
+        width: 5%;
+    }
+
     section#MBid figure img#lIn {
         width: 7%;
     }
@@ -81,6 +191,14 @@ section#MBid figcaption#mail{
     div#leftSide section#personalInfo{
         column-count:2;
         break-inside:avoid;
+    }
+
+    article#loisirs figure.icone img {
+        width: 10%;
+    }
+      
+    article#loisirs div#hobbies{
+        padding-top : 50px;
     }
 }
 
@@ -94,6 +212,11 @@ section#MBid figcaption#mail{
 
     section#MBid  figure.iconeInfo img{
 		width:10%;
+	}
+
+    article#loisirs figure.icone img{
+		margin-left:-63px;
+		width:50%;
 	}
 
     section#MBid figure.iconeInfo a img{
@@ -119,6 +242,11 @@ section#MBid figcaption#mail{
 		width:10%;
 	}
 
+    article#loisirs figure.icone img{
+		margin-left:-63px;
+		width:280%;
+	}
+    
 	section#MBid figure.iconeInfo a img{
 		width:15%;
 	}
